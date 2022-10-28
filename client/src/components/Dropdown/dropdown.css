@@ -1,0 +1,250 @@
+.dropdown-container {
+  position: absolute;
+  margin-top: 0.5rem;
+  background-color: #212121;
+  left: 0;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  z-index: 999;
+  padding: 1rem 0;
+  transform-origin: top center;
+  user-select: none;
+}
+
+.dropdown-enter {
+  opacity: 0;
+  transform: scaleY(0);
+}
+
+.dropdown-enter-active {
+  opacity: 1;
+  transform: scaleY(1);
+  transition: opacity 0.2s ease-in, transform 0.2s ease-in;
+}
+
+.dropdown-exit {
+  opacity: 1;
+}
+
+.dropdown-exit-active {
+  opacity: 0;
+  transform: scaleY(0);
+  transition: opacity 0.2s ease-in, transform 0.2s ease-in;
+}
+
+.drop-items {
+  position: relative;
+}
+
+.dropdown-link-sides {
+  display: flex;
+  place-items: center;
+  width: 100%;
+}
+
+.drop-side {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  max-height: 50vh;
+  background-color: #212121;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20ch, 1fr));
+  width: 100ch;
+  font-size: 0.8rem;
+  gap: 0px 1rem;
+  padding: 1rem;
+  overflow: auto;
+  text-transform: uppercase;
+}
+
+.drop-side a div {
+  width: fit-content;
+  padding: 0 0.5rem;
+}
+
+.drop-side a div:hover {
+  background-color: #313131;
+}
+
+.dropsideuse-enter {
+  opacity: 0;
+  transform-origin: left;
+  transform: scaleX(0);
+}
+
+.dropsideuse-enter-active {
+  opacity: 1;
+  transform-origin: left;
+  transform: scaleX(1);
+  transition: opacity 0.2s ease-in, transform 0.2s ease-in;
+}
+
+.dropsideuse-exit {
+  opacity: 1;
+  transform-origin: left;
+}
+
+.dropsideuse-exit-active {
+  opacity: 0;
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: opacity 0.2s ease-in, transform 0.2s ease-in;
+}
+
+.drop-side::-webkit-scrollbar {
+  width: 1rem;
+}
+
+.drop-side::-webkit-scrollbar-track {
+  background-color: #121212;
+}
+
+.drop-side::-webkit-scrollbar-thumb {
+  background-color: #313131;
+  border: 2px solid #121212;
+  background-clip: content-box;
+}
+
+.drop-side::-webkit-scrollbar-thumb:hover {
+  background-color: #414141;
+}
+
+.dropdown-container .dropdown-link {
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+}
+
+.dropdown-container .dropdown-link svg {
+  margin-right: 0.5rem;
+  color: white;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.dropdown-container .dropdown-link .arrow-icon,
+.dropdown-container .dropdown-link .arrow-icon-down {
+  margin: 0;
+  margin-left: auto;
+}
+
+.dropdown-container .dropdown-link .arrow-icon-down {
+  display: none;
+}
+
+.dropdown-auth,
+.dropdown-auth-other {
+  display: none;
+}
+
+@media (hover: hover) {
+  .dropdown-container .dropdown-link:hover {
+    background-color: #313131;
+  }
+}
+
+@media screen and (min-width: 93em) {
+  .dropdown-container {
+    left: 15%;
+  }
+}
+
+@media screen and (max-width: 58em) {
+  .drop-side {
+    width: 70ch;
+    place-items: center;
+  }
+}
+
+@media screen and (max-width: 62.5em) {
+  .dropdown-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    place-items: center;
+    overflow-y: auto;
+    max-height: 50vh;
+  }
+
+  .dropdown-link {
+    width: 10ch;
+  }
+
+  .dropdown-container .drop-items {
+    flex-direction: column;
+  }
+
+  .drop-side {
+    position: relative;
+    background-color: #313131;
+    left: 0;
+    width: 60ch;
+    place-items: center;
+  }
+
+  .dropsideuse-enter {
+    opacity: 0;
+    transform-origin: top;
+    transform: scaleY(0);
+  }
+
+  .dropsideuse-enter-active {
+    opacity: 1;
+    transform-origin: top;
+    transform: scaleY(1);
+    transition: opacity 0.2s ease-in, transform 0.2s ease-in;
+  }
+
+  .dropsideuse-exit {
+    opacity: 1;
+    transform-origin: top;
+  }
+
+  .dropsideuse-exit-active {
+    opacity: 0;
+    transform-origin: top;
+    transform: scaleY(0);
+    transition: opacity 0.2s ease-in, transform 0.2s ease-in;
+  }
+
+  .dropdown-container .dropdown-link .arrow-icon-down {
+    display: initial;
+  }
+
+  .dropdown-container .dropdown-link .arrow-icon {
+    display: none;
+  }
+
+  .dropdown-auth {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+  }
+
+  .dropdown-auth-other {
+    display: initial;
+  }
+
+  .dropdown-auth-user {
+    text-align: center;
+    margin-bottom: 0.6rem;
+  }
+
+  .dropdown-auth-user img {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #00c5c8;
+    border-radius: 50%;
+  }
+
+  .dropdown-auth-user div {
+    line-height: 1;
+  }
+}
+
+@media screen and (max-width: 32em) {
+  .drop-side {
+    width: 30ch;
+  }
+}

@@ -1,0 +1,76 @@
+.select {
+  position: relative;
+  user-select: none;
+  width: 10ch;
+  background-color: rgba(0 0 0 /0.9);
+  border: 1px solid #00c5c8;
+  text-align: center;
+}
+
+.select-category {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  place-content: center;
+  place-items: center;
+  cursor: pointer;
+}
+
+.select-other ul {
+  position: absolute;
+  padding: 1rem;
+  margin-top: 1rem;
+  background-color: rgba(0 0 0 /0.9);
+  text-align: initial;
+  width: 12ch;
+  z-index: 600;
+}
+
+.select-origin ul {
+  position: absolute;
+  padding: 1rem;
+  margin-top: 1rem;
+  background-color: #414141;
+  display: grid;
+  grid-template-columns: repeat(4, 12ch);
+  text-align: initial;
+  z-index: 600;
+  background-color: rgba(0 0 0 /0.9);
+}
+
+.select input {
+  cursor: pointer;
+}
+
+.select label {
+  font-size: 1rem;
+  color: #00c5c8;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 69em) {
+  .select label {
+    font-size: 0.7rem;
+  }
+
+  .select-origin ul,
+  .select-other ul {
+    padding: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 35em) {
+  .select-origin ul {
+    grid-template-columns: repeat(2, 12ch);
+  }
+
+  .select-origin ul,
+  .select-other ul {
+    padding: 0.5rem;
+    left: 50%;
+    max-height: 50vh;
+    overflow-y: auto;
+    transform: translateX(-50%);
+  }
+}

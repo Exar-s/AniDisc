@@ -1,0 +1,65 @@
+.wrapperClass {
+  background-color: black;
+}
+
+.editorClass {
+  height: 300px;
+  padding: 0 1rem 0 1rem;
+  background-color: black;
+  color: white;
+  overflow: auto;
+  border: 1px solid #00c5c8;
+}
+
+.toolbarClass {
+  background-color: #313131;
+  border: 1px solid #00c5c8;
+  border-radius: 0px;
+  color: black;
+}
+
+.toolbarClass span {
+  color: black;
+}
+
+.toolbarClass .rdw-option-wrapper {
+  border: 0;
+}
+
+.toolbarClass .rdw-option-wrapper[aria-selected='true'] {
+  background-color: grey;
+}
+
+.editorClass::-webkit-scrollbar {
+  width: 1rem;
+}
+
+.editorClass::-webkit-scrollbar-track {
+  background-color: #121212;
+}
+
+.editorClass::-webkit-scrollbar-thumb {
+  background-color: #313131;
+  border: 2px solid #121212;
+  background-clip: content-box;
+}
+
+.editorClass::-webkit-scrollbar-thumb:hover {
+  background-color: #414141;
+}
+
+.editorClass a {
+  color: aqua;
+  text-decoration: underline;
+}
+
+.editorClass-hidePlaceholder .public-DraftEditorPlaceholder-root {
+  display: none;
+}
+
+@media screen and (max-width: 32em) {
+  .wrapperClass {
+    width: 100%;
+    overflow: hidden;
+  }
+}

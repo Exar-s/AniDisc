@@ -1,0 +1,29 @@
+.paginate {
+  display: flex;
+  place-content: center;
+  font-size: 1.2rem;
+  user-select: none;
+}
+
+.paginate div {
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.paginate .paginate-dots {
+  cursor: initial;
+}
+
+.currPage {
+  color: #00c5c8;
+}
+
+@media screen and (max-width: 30em) {
+  .paginate {
+    font-size: 0.7rem;
+  }
+
+  .paginate div {
+    margin: 0.2rem;
+  }
+}

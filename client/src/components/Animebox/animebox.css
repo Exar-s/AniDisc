@@ -1,0 +1,85 @@
+.ani-link {
+  max-width: fit-content;
+}
+
+.anime {
+  width: 10rem;
+  margin-bottom: 1rem;
+}
+
+.anime-poster {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.anime-poster:hover {
+  filter: brightness(70%);
+}
+
+.anime-poster img {
+  width: 10rem;
+  height: 13rem;
+  animation: loadIn 1s ease-in;
+}
+
+@keyframes loadIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.anime-poster .anime-epitype {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  background-color: rgba(0 0 0 /0.5);
+  font-weight: bold;
+  padding: 0.3rem;
+}
+
+.anime-epitype .episodes {
+  color: #00c5c8;
+}
+
+.anime-title {
+  width: 10rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-align: center;
+  overflow: hidden;
+  padding-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+@media screen and (max-width: 25em) {
+  .anime {
+    width: 5rem;
+  }
+
+  .anime-poster {
+    place-items: center;
+  }
+
+  .anime img {
+    place-items: center;
+    width: 5rem;
+    height: 7rem;
+  }
+
+  .anime-poster .anime-epitype {
+    font-size: 0.6rem;
+    width: 5rem;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .anime-title {
+    width: 5rem;
+  }
+}

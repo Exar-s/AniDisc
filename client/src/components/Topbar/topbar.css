@@ -1,0 +1,36 @@
+.topten {
+  display: flex;
+  margin-bottom: 1rem;
+  background-color: rgba(0 0 0 /0.8);
+  padding: 0.3rem;
+  border-right: 1px solid #00c5c8;
+}
+
+.topten:hover {
+  filter: brightness(70%);
+}
+
+.topten img {
+  width: 3rem;
+  height: 4rem;
+}
+
+.topten-maininfo {
+  width: 70%;
+}
+
+.topten-maininfo p {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin: 0.3rem;
+}
+
+.topten-epitype {
+  display: flex;
+  justify-content: space-between;
+}
+
+.topten-epitype .topten-episodes {
+  color: #00c5c8;
+}

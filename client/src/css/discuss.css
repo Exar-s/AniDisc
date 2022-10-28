@@ -1,0 +1,171 @@
+.discuss-container {
+  display: flex;
+  place-content: center;
+  width: 100%;
+  position: relative;
+}
+
+.discuss-wrapper {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 60%;
+  border: 1px solid #00c5c8;
+  background-color: #212121;
+  margin-top: 2rem;
+  padding: 2rem;
+}
+
+.discuss-post {
+  width: 100%;
+  word-wrap: break-word;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid white;
+}
+
+.discuss-post-user {
+  display: flex;
+  max-height: 4rem;
+  width: 100%;
+}
+
+.discuss-post-user img {
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+  margin-right: 0.3rem;
+}
+
+.discuss-post-img img {
+  width: 100%;
+}
+
+.discuss-post-user div,
+.discuss-comment-user {
+  color: rgb(255 255 255 / 0.7);
+}
+
+.discuss-post-img {
+  display: flex;
+  place-content: center;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.discuss-container form {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.discuss-container form p {
+  font-size: 2rem;
+  margin-bottom: 0.3rem;
+}
+
+.discuss-form-submit {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.discuss-form-submit button {
+  cursor: pointer;
+}
+
+.discuss-form-submit button:hover {
+  background-color: #00c5c8;
+}
+
+.discuss-form-submit div {
+  display: flex;
+  place-items: center;
+}
+
+.discuss-form-submit button {
+  background-color: transparent;
+  color: white;
+  border: 1px solid #00c5c8;
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.discuss-login {
+  margin: 1rem 0;
+  font-size: 1.5rem;
+}
+
+.discuss-login a {
+  color: #00c5c8;
+  text-decoration: underline;
+}
+
+.discuss-container .wrapperClass {
+  width: 100%;
+}
+
+.discuss-container .editorClass {
+  height: 10rem;
+}
+
+.discuss-comment {
+  display: flex;
+  position: relative;
+  margin-bottom: 3rem;
+  width: 100%;
+}
+
+.discuss-comment div {
+  width: 95%;
+}
+
+.discuss-comment img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+.discuss-comment.not-last::after {
+  content: '';
+  position: absolute;
+  top: 4rem;
+  left: calc((3rem - 2px) / 2);
+  bottom: -2rem;
+  width: 2px;
+  background-color: white;
+  z-index: 500;
+}
+
+.discuss-comment-user {
+  font-size: 0.8rem;
+}
+
+.discuss-comment-text {
+  margin-top: 0.5rem;
+  word-wrap: break-word;
+}
+
+@media screen and (max-width: 63em) {
+  .discuss-wrapper {
+    width: 90%;
+    padding: 0.3rem;
+  }
+
+  .discuss-comment div {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 22em) {
+  .discuss-wrapper {
+    width: 90%;
+    padding: 0.3rem;
+  }
+
+  .discuss-comment div {
+    width: 65%;
+  }
+}

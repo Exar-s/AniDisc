@@ -1,0 +1,54 @@
+.anime-info-container {
+  border: 1px solid #00c5c8;
+  display: flex;
+  padding: 1rem;
+  gap: 1rem;
+  background-color: rgba(0 0 0 / 0.5);
+  width: 100%;
+}
+
+.anime-info-container h3 {
+  color: #00c5c8;
+}
+
+.anime-info-data {
+  flex: 1;
+}
+
+.anime-info-small {
+  display: flex;
+  color: rgb(255 255 255 / 0.5);
+  margin: 0.5rem 0;
+  justify-content: space-between;
+}
+
+.anime-info-small div:nth-child(2) {
+  text-align: right;
+}
+
+@media screen and (max-width: 50em) {
+  .anime-info-container img {
+    width: 9rem;
+    height: 10rem;
+  }
+}
+
+@media screen and (max-width: 32em) {
+  .anime-info-container {
+    flex-direction: column;
+    place-items: center;
+  }
+
+  .anime-info-container img {
+    width: 8rem;
+    height: 10rem;
+  }
+
+  .anime-info-small {
+    font-size: 0.7rem;
+  }
+
+  .anime-info-container h3 {
+    text-align: center;
+  }
+}

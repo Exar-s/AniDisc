@@ -1,0 +1,31 @@
+.nomatch-container {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  margin-top: 5rem;
+}
+.nomatch-container img {
+  width: 40%;
+}
+
+.nomatch-container button {
+  width: 40%;
+  background-color: transparent;
+  border: 1px solid #00c5c8;
+  outline: 0;
+  color: whitesmoke;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.nomatch-container button:hover {
+  cursor: pointer;
+  background-color: #00c5c8;
+}
+
+@media screen and (max-width: 38em) {
+  .nomatch-container img,
+  .nomatch-container button {
+    width: 90%;
+  }
+}

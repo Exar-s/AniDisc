@@ -1,0 +1,128 @@
+.profile-container {
+  display: flex;
+  place-content: center;
+  width: 100%;
+}
+
+.profile-wrapper {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  width: 30rem;
+  background-color: rgb(0 0 0 / 0.5);
+  border: 1px solid #00c5c8;
+  padding: 2rem;
+  margin-top: 3rem;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  place-content: centers;
+  width: 100%;
+  word-wrap: break-word;
+}
+
+.profile-pic {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.profile-container button {
+  position: absolute;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.profile-pic button {
+  top: 50%;
+  left: 50%;
+  transform: translate(calc(-50% + 8rem), -50%);
+}
+
+.profile-pic img {
+  width: 14rem;
+  height: 14rem;
+  object-fit: cover;
+  background-color: black;
+  border-radius: 50%;
+  border: 2px solid #00c5c8;
+}
+
+.profile-username {
+  width: 100%;
+  text-align: center;
+}
+
+.profile-signature {
+  position: relative;
+  border: 1px solid gray;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.profile-signature button {
+  top: -12px;
+  right: -12px;
+}
+
+.profile-postCom {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+  background-color: #212121;
+  font-size: 24px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.profile-num {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 32em) {
+  .profile-wrapper {
+    width: 20rem;
+    padding: 0.5rem;
+  }
+
+  .profile-pic img {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .profile-pic button {
+    transform: translate(calc(-50% + 4rem), -50%);
+  }
+
+  .profile-wrapper button svg {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .profile-postCom {
+    font-size: 1rem;
+  }
+
+  .profile-signature button {
+    top: calc((-1rem / 2));
+    right: calc((-1rem / 2));
+  }
+
+  .profile-postCom svg {
+    width: 1rem;
+    height: 1rem;
+  }
+}
+
+@media screen and (max-width: 25em) {
+  .profile-wrapper {
+    width: 100%;
+    padding: 0.5rem;
+  }
+}

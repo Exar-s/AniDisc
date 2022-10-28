@@ -1,0 +1,110 @@
+.disclist-post {
+  margin: 1rem 0;
+  border: 1px solid #00c5c8;
+  overflow-wrap: break-word;
+  background-color: rgba(0 0 0 /0.5);
+}
+
+.disclist-date {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-bottom: 1px solid #00c5c8;
+  padding: 0.5rem;
+}
+
+.disclist-date-user {
+  display: none;
+}
+
+.disclist-main {
+  display: flex;
+  position: relative;
+  margin: 1rem 0;
+}
+
+.disclist-main-user {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+  border-right: 1px solid white;
+  min-width: 20%;
+  max-width: 20%;
+  text-align: center;
+}
+
+.disclist-main-user img {
+  margin: 1rem auto;
+  width: 100px;
+  height: 100px;
+}
+
+.disclist-main-post {
+  max-width: 00%;
+  min-width: 80%;
+  position: relative;
+  padding: 0 1rem;
+}
+
+.disclist-main-img {
+  width: 100%;
+  background-color: black;
+}
+
+.disclist-main-img img {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: auto;
+  width: initial;
+  max-width: 100%;
+}
+
+.disclist-main-post p {
+  overflow-wrap: break-word;
+}
+
+.no-post {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 57em) {
+  .disclist-main {
+    flex-direction: column;
+  }
+
+  .disclist-main-post {
+    max-width: 100%;
+  }
+
+  .disclist-main-user {
+    display: none;
+  }
+
+  .disclist-date {
+    justify-content: space-between;
+  }
+
+  .disclist-date-user {
+    display: flex;
+    align-items: center;
+  }
+
+  .disclist-date-user img {
+    height: 2rem;
+    width: 2rem;
+    margin-right: 0.5rem;
+    border-radius: 50%;
+  }
+
+  .disclist-post h1 {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 20em) {
+  .disclist-date {
+    flex-direction: column;
+  }
+}

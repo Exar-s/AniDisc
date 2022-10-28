@@ -1,0 +1,135 @@
+.post-container {
+  margin: 1rem;
+  position: relative;
+  max-width: 95vw;
+}
+
+.post-container h2 span {
+  color: #00c5c8;
+}
+
+.post-container form {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  background-color: #212121;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.post-container-titleandlimit {
+  display: flex;
+  justify-content: space-between;
+  height: 3rem;
+  border: 1px solid #00c5c8;
+  margin-bottom: 0.2rem;
+  background-color: #000;
+}
+
+.post-container-titleandlimit div {
+  padding: 1rem;
+}
+
+.post-container-titleandlimit input {
+  background-color: black;
+  border: 0;
+  outline: 0;
+  padding: 1rem 0 1rem 1rem;
+  flex: 1;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.post-container-titleandlimit input::placeholder {
+  color: white;
+}
+
+.post-container-length {
+  text-align: right;
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+
+.post-container-img {
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  place-items: center;
+}
+
+.post-container-img input {
+  display: none;
+}
+
+.post-container-img label,
+.post-container-img button {
+  background-color: transparent;
+  color: white;
+  border: 1px solid #00c5c8;
+  margin-top: 1rem;
+  padding: 1rem;
+  text-align: center;
+  width: 10rem;
+  cursor: pointer;
+}
+
+.post-container-img label:hover,
+.post-container-img button:hover {
+  background-color: #00c5c8;
+}
+
+.post-container-img img {
+  max-width: 95%;
+  max-height: 300px;
+}
+
+.post-container-submit {
+  background-color: rgba(0, 197, 200, 0.7);
+  color: white;
+  border: 1px solid #00c5c8;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0.2rem;
+}
+
+.post-container-submit:hover {
+  background-color: #00c5c8;
+}
+
+@media screen and (max-width: 53em) {
+  .post-container form {
+    grid-template-columns: none;
+  }
+
+  .post-container-img {
+    margin: 1rem 0;
+  }
+}
+
+@media screen and (max-width: 32em) {
+  .post-container-titleandlimit {
+    width: 100%;
+    height: 2rem;
+  }
+
+  .post-container-titleandlimit input {
+    width: 100%;
+    padding: 0 0 0 1rem;
+    font-size: 1rem;
+  }
+
+  .post-container-titleandlimit div {
+    display: none;
+    padding: 0 1rem 0 0;
+    line-height: 1.5;
+  }
+
+  .post-container-img img {
+    width: 100%;
+  }
+
+  .post-container-submit {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0;
+  }
+}
