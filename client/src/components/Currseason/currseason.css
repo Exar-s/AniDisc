@@ -1,6 +1,5 @@
 .currseason {
   display: grid;
-  place-items: center;
   grid-template-columns: repeat(5, 1fr);
 }
 
@@ -13,6 +12,7 @@
 @media screen and (max-width: 44em) {
   .currseason {
     grid-template-columns: repeat(2, 1fr);
+    place-items: center;
   }
 }
 
