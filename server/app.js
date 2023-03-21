@@ -23,6 +23,9 @@ app.use('/images', express.static('images'));
 
 app.use(tokenExtractor);
 
+app.get('/', (req,res) => {
+  res.status(200).send('Hello')
+})
 app.use('/api/auth', authRoutes);
 app.use('/api/users', userRoutes);
 app.use('/api/posts', postRoutes);

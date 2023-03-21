@@ -1,5 +1,5 @@
 import axios from 'axios';
-const url = 'http://localhost:3001/api/posts';
+const url = 'https://anidisc-api.onrender.com/api/posts';
 
 //Create new post
 const newPost = async (postData, token) => {
@@ -40,6 +40,11 @@ const postComment = async (commentData, token) => {
   return res.data;
 };
 
+const checkLoad = async() => {
+  const res = await axios.get('https://anidisc-api.onrender.com/');
+  return res.data
+}
+
 const postService = {
   newPost,
   getAllPost,
@@ -48,3 +53,4 @@ const postService = {
 };
 
 export default postService;
+export {checkLoad}

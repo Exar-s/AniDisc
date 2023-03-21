@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const url = 'http://localhost:3001/api/users';
+const url = 'https://anidisc-api.onrender.com/api/users';
 
 //Get a user's profile 
 const getUser = async (username) => {

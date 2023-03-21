@@ -1,7 +1,7 @@
 import axios from 'axios';
 import jwtDecode from 'jwt-decode';
 
-const URL = 'http://localhost:3001/api/auth';
+const URL = 'https://anidisc-api.onrender.com/api/auth';
 
 //Register user and set token in localstorage for relogin
 const register = async (userData) => {

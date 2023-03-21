@@ -1,0 +1,22 @@
+.serverload {
+  display: flex;
+  place-content: center;
+  padding: 2rem;
+}
+
+.serverload-container {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+}
+
+.serverload p{
+  font-size: 1.5rem;
+}
+
+.serverload img {
+  height: 19em;
+  width: 32em;
+}
